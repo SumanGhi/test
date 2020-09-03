@@ -36,8 +36,8 @@ class header extends Component {
                         <div class="container">
                             <nav class="navbar navbar-expand-lg">
                                 <a class="navbar-brand" href="index.html">
-                                    <img class="logo_light" src="assets/images/logo_light.png" alt="logo" />
-                                    <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo" />
+                                    <img class="logo_light" src={require("./assets/images/logo_light.png")} alt="logo" />
+                                    <img class="logo_dark" src={require("./assets/images/logo_dark.png")} alt="logo" />
                                 </a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
                                     <span class="ion-android-menu"></span>
@@ -112,7 +112,7 @@ class header extends Component {
                                                 <div class="d-lg-flex menu_banners">
                                                     <div class="col-sm-4">
                                                         <div class="header-banner">
-                                                            <img src="assets/images/menu_banner1.jpg" alt="menu_banner1" />
+                                                            <img src={require("./assets/images/menu_banner1.jpg")} alt="menu_banner1" />
                                                             <div class="banne_info">
                                                                 <h6>10% Off</h6>
                                                                 <h4>New Arrival</h4>
@@ -122,7 +122,7 @@ class header extends Component {
                                                     </div>
                                                     <div class="col-sm-4">
                                                         <div class="header-banner">
-                                                            <img src="assets/images/menu_banner2.jpg" alt="menu_banner2" />
+                                                            <img src={require("./assets/images/menu_banner2.jpg")} alt="menu_banner2" />
                                                             <div class="banne_info">
                                                                 <h6>15% Off</h6>
                                                                 <h4>Men's Fashion</h4>
@@ -132,7 +132,7 @@ class header extends Component {
                                                     </div>
                                                     <div class="col-sm-4">
                                                         <div class="header-banner">
-                                                            <img src="assets/images/menu_banner3.jpg" alt="menu_banner3" />
+                                                            <img src={require("./assets/images/menu_banner3.jpg")} alt="menu_banner3" />
                                                             <div class="banne_info">
                                                                 <h6>23% Off</h6>
                                                                 <h4>Kids Fashion</h4>
@@ -190,7 +190,7 @@ class header extends Component {
                                                             <div class="header_banner_content">
                                                                 <div class="shop_banner">
                                                                     <div class="banner_img overlay_bg_40">
-                                                                        <img src="assets/images/shop_banner.jpg" alt="shop_banner" />
+                                                                        <img src={require("./assets/images/shop_banner.jpg")} alt="shop_banner" />
                                                                     </div>
                                                                     <div class="shop_bn_content">
                                                                         <h5 class="text-uppercase shop_subtitle">New Collection</h5>
