@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import Product from './productData'
 
 class header extends Component {
+    
     render() {
         return (
             <div>
@@ -218,16 +220,14 @@ class header extends Component {
                                     <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-toggle="dropdown"><i class="linearicons-cart"></i><span class="cart_count">2</span></a>
                                         <div class="cart_box dropdown-menu dropdown-menu-right">
                                             <ul class="cart_list">
-                                                <li>
+                                                {Product.map((product)=>(
+                                                   <li>
                                                     <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                                    <a href="#"><img src={require("./assets/images/cart_thamb1.jpg")}  alt="cart_thumb1" />Variable product 001</a>
-                                                    <span class="cart_quantity"> 1 x <span class="cart_amount"> <span class="price_symbole">$</span></span>78.00</span>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                                    <a href="#"><img src="assets/images/cart_thamb2.jpg" alt="cart_thumb2" />Ornare sed consequat</a>
-                                                    <span class="cart_quantity"> 1 x <span class="cart_amount"> <span class="price_symbole">$</span></span>81.00</span>
-                                                </li>
+                                                    <a href="#"><img src={require("./assets/images/cart_thamb1.jpg")}  alt="cart_thumb1" />{product.name}</a>
+                                                    <span class="cart_quantity"> {product.quantity} x <span class="cart_amount"> <span class="price_symbole">Rs.</span></span>{product.price}</span>
+                                                </li> 
+                                                ))}
+                                                
                                             </ul>
                                             <div class="cart_footer">
                                                 <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span class="price_symbole">$</span></span>159.00</p>
