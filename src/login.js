@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Login from './loginData'
 
 const initialState = {
     email: "",
@@ -11,7 +10,7 @@ class login extends Component {
     state = initialState
 
     handleChange = event => {
-        const isCheckbox = event.target.type == "checkbox"
+        const isCheckbox = event.target.type === "checkbox"
         this.setState({
             [event.target.name] : isCheckbox
             ? event.target.checked
@@ -22,18 +21,30 @@ class login extends Component {
     validate = () =>{
         let emailError= ""
         let passwordError= ""
-        if(!this.state.email.includes('@')){
-            emailError = "invalid email"
+        if(!this.state.email){
+            emailError = "*Please fill out this field"
         }
-        if (emailError){
-            this.setState({emailError})
+        
+        else if (this.state.email !== "s@gmail.com"){
+            passwordError =  "invalid credential"
+        }
+        if (!this.state.password){
+            passwordError = "*Please fill out this field"
+        }
+        else if (this.state.password !== '123'){
+            passwordError = "invalid credential"
+        }
+        if (emailError || passwordError){
+            this.setState({emailError, passwordError})
             return false;
         }
+        return true
     }
     handleSubmit = event =>{
         event.preventDefault()
         const isValid = this.validate()
         if (isValid){
+            prompt('success')
             console.log(this.state)
             this.setState(initialState)
         }
@@ -124,11 +135,11 @@ class login extends Component {
                                             <form method="post" onSubmit= {this.handleSubmit}>
                                                 <div class="form-group">
                                                     <input type="text" required="" class="form-control" name="email" placeholder="Your Email" value={this.state.email} onChange={this.handleChange} />
-                                                    <div>{this.state.emailError} </div>
+                                                    <div style={{color: 'red', fontSize: '12px'}}>{this.state.emailError} </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <input class="form-control" required="" type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handleChange}/>
-                                                    <div>{this.state.passwordError} </div>
+                                                    <div style={{color: 'red', fontSize: '12px'}}>{this.state.passwordError} </div>
                                                 </div>
                                                 <div class="login_footer form-group">
                                                     <div class="chek-form">
