@@ -111,7 +111,7 @@ class footer extends Component {
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <p class="mb-md-0 text-center text-md-left">© 2020 All Rights Reserved by Bestwebcreator</p>
+                                    <p class="mb-md-0 text-center text-md-left">© 2020 All Rights Reserved by B-Brothers</p>
                                 </div>
                                 <div class="col-md-6">
                                     <ul class="footer_payment text-center text-lg-right">

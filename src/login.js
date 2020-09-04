@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Redirect} from 'react-router-dom'
 
 const initialState = {
     email: "",
@@ -44,9 +45,10 @@ class login extends Component {
         event.preventDefault()
         const isValid = this.validate()
         if (isValid){
-            prompt('success')
             console.log(this.state)
             this.setState(initialState)
+            return <Redirect to="/index" />
+
         }
     }
    

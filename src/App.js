@@ -18,12 +18,21 @@ import './assets/css/slick.css'
 import './assets/css/slick-theme.css'
 import './assets/css/style.css'
 import './assets/css/responsive.css'
+import './assets/css/jquery-ui.css'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Main from './main'
 
 function App() {
   return (
     <div>
       <Header />
-      <Login />
+      <BrowserRouter>
+            <Switch>
+             <Route path="/index" component={Main} exact/>
+             <Route path="/" component={Login}/>
+             {/* <Route component={Error}/> */}
+           </Switch>
+      </BrowserRouter>
       <Footer />
     </div>
   );

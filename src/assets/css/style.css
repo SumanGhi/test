@@ -5788,6 +5788,21 @@ footer .widget_title {
 .releted_product_slider .item {
 	margin: 10px 0px 0px;
 }
+.product_slider{
+	display: flex;
+}
+.product_slider:hover .item{
+	display: none;
+}
+.item2{
+	margin: 10px 0px 0px;
+	display: none;
+	height: 350px;
+	width: 215px;
+}
+.product_slider:hover .item2{
+	display: block;
+}
 .releted_product_slider .product {
 	margin-bottom: 15px;
 }

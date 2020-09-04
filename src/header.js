@@ -16,7 +16,7 @@ class header extends Component {
                                     <div class="d-flex align-items-center justify-content-center justify-content-md-start">
 
                                         <ul class="contact_detail text-center text-lg-left">
-                                            <li><i class="ti-mobile"></i><span>123-456-7890</span></li>
+                                            <li><i class="ti-mobile"></i><span>+977-9860645707</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -25,7 +25,7 @@ class header extends Component {
                                         <ul class="header_list">
                                             <li><a href="#"><i class="ti-control-shuffle"></i><span>Compare</span></a></li>
                                             <li><a href="#"><i class="ti-heart"></i><span>Wishlist</span></a></li>
-                                            <li><a href="#"><i class="ti-user"></i><span>Login</span></a></li>
+                                            <li><a href="/"><i class="ti-user"></i><span>Login</span></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -48,9 +48,9 @@ class header extends Component {
                                             <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Home</a>
                                             <div class="dropdown-menu">
                                                 <ul>
-                                                    <li><a class="dropdown-item nav-link nav_item" href="index.html">Homeopathic</a></li>
-                                                    <li><a class="dropdown-item nav-link nav_item" href="index-2.html">Allopathic</a></li>
-                                                    <li><a class="dropdown-item nav-link nav_item" href="index-3.html">Ayurvedic</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item" href="index">Homeopathic</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item" href="index">Allopathic</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item" href="index">Ayurvedic</a></li>
                                                 </ul>
                                             </div>
                                         </li>
