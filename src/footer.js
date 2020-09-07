@@ -127,6 +127,8 @@ class footer extends Component {
                     </div>
                 </footer>
                 {/* <!-- END FOOTER --> */}
+                <a href="#" class="scrollup" style={{ display: 'none' }}><i class="ion-ios-arrow-up"></i></a>
+
                 
             </div>
         );

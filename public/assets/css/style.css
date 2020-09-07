@@ -4984,7 +4984,7 @@ footer .widget_title {
 	z-index: -1;
 	top: 0;
 	left: 0;
-	padding-left: 40pt;
+	padding-left: 35pt;
 	padding-top: 30pt;
 	-moz-transform: translateX(100%);
 	-webkit-transform: translateX(100%);
@@ -5004,7 +5004,7 @@ footer .widget_title {
 .product:hover .image ,
 .product_box:hover .image ,
 .product_wrap:hover .image  {
-	opacity: 0;
+	opacity: 0.1;
 	
 }
 .pr_desc {
@@ -5203,6 +5203,7 @@ footer .widget_title {
 	background-color: #FF324D;
 	color: #fff;
 }
+
 .product .product_title,
 .product_box .product_title,
 .product_wrap .product_title {

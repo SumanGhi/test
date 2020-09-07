@@ -1,61 +1,9 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom'
 
-const initialState = {
-    email: "",
-    password: "",
-    emailError: "",
-    passwordError: ""
-}
-class login extends Component {
-    state = initialState
-
-    handleChange = event => {
-        const isCheckbox = event.target.type === "checkbox"
-        this.setState({
-            [event.target.name]: isCheckbox
-                ? event.target.checked
-                : event.target.value
-        })
-    }
-
-    validate = () => {
-        let emailError = ""
-        let passwordError = ""
-        if (!this.state.email) {
-            emailError = "*Please fill out this field"
-        }
-
-        else if (this.state.email !== "s@gmail.com") {
-            passwordError = "invalid credential"
-        }
-        if (!this.state.password) {
-            passwordError = "*Please fill out this field"
-        }
-        else if (this.state.password !== '123') {
-            passwordError = "invalid credential"
-        }
-        if (emailError || passwordError) {
-            this.setState({ emailError, passwordError })
-            return false;
-        }
-        return true
-    }
-    handleSubmit = event => {
-        event.preventDefault()
-        const isValid = this.validate()
-        if (isValid) {
-            console.log(this.state)
-            this.setState(initialState)
-            return <Redirect to="/index" />
-
-        }
-    }
-
+class signup extends Component {
     render() {
         return (
             <div>
-                
 
                 {/* <!-- START SECTION BREADCRUMB --> */}
                 <div class="breadcrumb_section bg_gray page-title-mini">
@@ -64,19 +12,19 @@ class login extends Component {
                         <div class="row align-items-center">
                             <div class="col-md-6">
                                 <div class="page-title">
-                                    <h1>Login</h1>
+                                    <h1>Register</h1>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <ol class="breadcrumb justify-content-md-end">
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                                    <li class="breadcrumb-item active">Login</li>
+                                    <li class="breadcrumb-item active">Register</li>
                                 </ol>
                             </div>
                         </div>
-                        {/* </div><!-- END CONTAINER--> */}
                     </div>
+                    {/* <!-- END CONTAINER--> */}
                 </div>
                 {/* <!-- END SECTION BREADCRUMB --> */}
 
@@ -91,28 +39,31 @@ class login extends Component {
                                     <div class="login_wrap">
                                         <div class="padding_eight_all bg-white">
                                             <div class="heading_s1">
-                                                <h3>Login</h3>
+                                                <h3>Create an Account</h3>
                                             </div>
-                                            <form method="post" onSubmit={this.handleSubmit}>
+                                            <form method="post">
                                                 <div class="form-group">
-                                                    <input type="text" required="" class="form-control" name="email" placeholder="Your Email" value={this.state.email} onChange={this.handleChange} />
-                                                    <div style={{ color: 'red', fontSize: '12px' }}>{this.state.emailError} </div>
+                                                    <input type="text" required="" class="form-control" name="name" placeholder="Enter Your Name" />
                                                 </div>
                                                 <div class="form-group">
-                                                    <input class="form-control" required="" type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} />
-                                                    <div style={{ color: 'red', fontSize: '12px' }}>{this.state.passwordError} </div>
+                                                    <input type="text" required="" class="form-control" name="email" placeholder="Enter Your Email" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" required="" type="password" name="password" placeholder="Password" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" required="" type="password" name="password" placeholder="Confirm Password" />
                                                 </div>
                                                 <div class="login_footer form-group">
                                                     <div class="chek-form">
                                                         <div class="custome-checkbox">
-                                                            <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox1" value="" />
-                                                            <label class="form-check-label" for="exampleCheckbox1"><span>Remember me</span></label>
+                                                            <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox2" value="" />
+                                                            <label class="form-check-label" for="exampleCheckbox2"><span>I agree to terms &amp; Policy.</span></label>
                                                         </div>
                                                     </div>
-                                                    <a href="#">Forgot password?</a>
                                                 </div>
                                                 <div class="form-group">
-                                                    <button type="submit" class="btn btn-fill-out btn-block" name="login">Log in</button>
+                                                    <button type="submit" class="btn btn-fill-out btn-block" name="register">Register</button>
                                                 </div>
                                             </form>
                                             <div class="different_login">
@@ -122,7 +73,7 @@ class login extends Component {
                                                 <li><a href="#" class="btn btn-facebook"><i class="ion-social-facebook"></i>Facebook</a></li>
                                                 <li><a href="#" class="btn btn-google"><i class="ion-social-googleplus"></i>Google</a></li>
                                             </ul>
-                                            <div class="form-note text-center">Don't Have an Account? <a href="signup.html">Sign up now</a></div>
+                                            <div class="form-note text-center">Already have an account? <a href="login.html">Log in</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -138,4 +89,4 @@ class login extends Component {
     }
 }
 
-export default login;
+export default signup;

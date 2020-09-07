@@ -209,7 +209,7 @@ class main extends Component {
                                                         <li class="mega-menu-col col-lg-4">
                                                             <ul>
                                                                 <li class="dropdown-header">Kid's</li>
-                                                                <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail.html">Donec vitae facilisis</a></li>
+                                                                <li><a class="dropdown-item nav-link nav_item" href="/detail">Donec vitae facilisis</a></li>
                                                                 <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-left-sidebar.html">Quisque condimentum</a></li>
                                                                 <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-right-sidebar.html">Etiam ac rutrum</a></li>
                                                                 <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-thumbnails-left.html">Donec vitae ante ante</a></li>
@@ -422,7 +422,7 @@ class main extends Component {
                                                                 <li class="mega-menu-col col-lg-4">
                                                                     <ul>
                                                                         <li class="dropdown-header">Product Pages</li>
-                                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail.html">Default</a></li>
+                                                                        <li><a class="dropdown-item nav-link nav_item" href="/detail">Default</a></li>
                                                                         <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-left-sidebar.html">Left Sidebar</a></li>
                                                                         <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-right-sidebar.html">Right Sidebar</a></li>
                                                                         <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-thumbnails-left.html">Thumbnails Left</a></li>
@@ -594,7 +594,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img1.jpg" alt="el_img1" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img1.jpg" alt="el_hover_img1" />
                                                                     </a>
@@ -608,7 +608,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Red & Black Headphone</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Red & Black Headphone</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$45.00</span>
                                                                         <del>$55.25</del>
@@ -631,7 +631,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img2.jpg" alt="el_img2" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img2.jpg" alt="el_hover_img2" />
                                                                     </a>
@@ -645,7 +645,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Smart Watch External</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Smart Watch External</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$55.00</span>
                                                                         <del>$95.00</del>
@@ -669,7 +669,7 @@ class main extends Component {
                                                             <div class="product_wrap">
                                                                 <span class="pr_flash">New</span>
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img3.jpg" alt="el_img3" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img3.jpg" alt="el_hover_img3" />
                                                                     </a>
@@ -683,7 +683,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Nikon HD camera</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Nikon HD camera</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$68.00</span>
                                                                         <del>$99.00</del>
@@ -703,7 +703,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img4.jpg" alt="el_img4" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img4.jpg" alt="el_hover_img4" />
                                                                     </a>
@@ -717,7 +717,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Audio Equipment</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Audio Equipment</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$69.00</span>
                                                                         <del>$89.00</del>
@@ -740,7 +740,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img5.jpg" alt="el_img5" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img5.jpg" alt="el_hover_img5" />
                                                                     </a>
@@ -754,7 +754,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Smart Televisions</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Smart Televisions</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$45.00</span>
                                                                         <del>$55.25</del>
@@ -778,7 +778,7 @@ class main extends Component {
                                                             <div class="product_wrap">
                                                                 <span class="pr_flash bg-danger">Hot</span>
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img6.jpg" alt="el_img6" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img6.jpg" alt="el_hover_img6" />
                                                                     </a>
@@ -792,7 +792,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Samsung Smart Phone</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Samsung Smart Phone</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$55.00</span>
                                                                         <del>$95.00</del>
@@ -819,7 +819,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img7.jpg" alt="el_img7" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img7.jpg" alt="el_hover_img7" />
                                                                     </a>
@@ -833,7 +833,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Audio Theaters</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Audio Theaters</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$45.00</span>
                                                                         <del>$55.25</del>
@@ -857,7 +857,7 @@ class main extends Component {
                                                             <div class="product_wrap">
                                                                 <span class="pr_flash bg-danger">Hot</span>
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img8.jpg" alt="el_img8" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img8.jpg" alt="el_hover_img8" />
                                                                     </a>
@@ -871,7 +871,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Surveillance camera</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Surveillance camera</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$55.00</span>
                                                                         <del>$95.00</del>
@@ -894,7 +894,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img9.jpg" alt="el_img9" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img9.jpg" alt="el_hover_img9" />
                                                                     </a>
@@ -908,7 +908,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">oppo Reno3 Pro</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">oppo Reno3 Pro</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$68.00</span>
                                                                         <del>$99.00</del>
@@ -932,7 +932,7 @@ class main extends Component {
                                                             <div class="product_wrap">
                                                                 <span class="pr_flash bg-success">Sale</span>
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img10.jpg" alt="el_img10" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img10.jpg" alt="el_hover_img10" />
                                                                     </a>
@@ -946,7 +946,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">classical Headphone</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">classical Headphone</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$68.00</span>
                                                                         <del>$99.00</del>
@@ -969,7 +969,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img11.jpg" alt="el_img11" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img11.jpg" alt="el_hover_img11" />
                                                                     </a>
@@ -983,7 +983,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Basics High-Speed HDMI</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Basics High-Speed HDMI</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$69.00</span>
                                                                         <del>$89.00</del>
@@ -1006,7 +1006,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img12.jpg" alt="el_img12" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img12.jpg" alt="el_hover_img12" />
                                                                     </a>
@@ -1020,7 +1020,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Sound Equipment for Low</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Sound Equipment for Low</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$45.00</span>
                                                                         <del>$55.25</del>
@@ -1048,7 +1048,7 @@ class main extends Component {
                                                             <div class="product_wrap">
                                                                 <span class="pr_flash bg-danger">Hot</span>
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img8.jpg" alt="el_img8" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img8.jpg" alt="el_hover_img8" />
                                                                     </a>
@@ -1062,7 +1062,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Surveillance camera</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Surveillance camera</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$55.00</span>
                                                                         <del>$95.00</del>
@@ -1085,7 +1085,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img4.jpg" alt="el_img4" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img4.jpg" alt="el_hover_img4" />
                                                                     </a>
@@ -1099,7 +1099,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Audio Equipment</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Audio Equipment</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$69.00</span>
                                                                         <del>$89.00</del>
@@ -1122,7 +1122,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img11.jpg" alt="el_img11" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img11.jpg" alt="el_hover_img11" />
                                                                     </a>
@@ -1136,7 +1136,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Basics High-Speed HDMI</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Basics High-Speed HDMI</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$69.00</span>
                                                                         <del>$89.00</del>
@@ -1159,7 +1159,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img1.jpg" alt="el_img1" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img1.jpg" alt="el_hover_img1" />
                                                                     </a>
@@ -1173,7 +1173,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Red & Black Headphone</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Red & Black Headphone</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$45.00</span>
                                                                         <del>$55.25</del>
@@ -1196,7 +1196,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img7.jpg" alt="el_img7" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img7.jpg" alt="el_hover_img7" />
                                                                     </a>
@@ -1210,7 +1210,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Audio Theaters</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Audio Theaters</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$45.00</span>
                                                                         <del>$55.25</del>
@@ -1234,7 +1234,7 @@ class main extends Component {
                                                             <div class="product_wrap">
                                                                 <span class="pr_flash bg-danger">Hot</span>
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img6.jpg" alt="el_img6" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img6.jpg" alt="el_hover_img6" />
                                                                     </a>
@@ -1248,7 +1248,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Samsung Smart Phone</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Samsung Smart Phone</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$55.00</span>
                                                                         <del>$95.00</del>
@@ -1275,7 +1275,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img2.jpg" alt="el_img2" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img2.jpg" alt="el_hover_img2" />
                                                                     </a>
@@ -1289,7 +1289,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Smart Watch External</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Smart Watch External</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$55.00</span>
                                                                         <del>$95.00</del>
@@ -1312,7 +1312,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img5.jpg" alt="el_img5" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img5.jpg" alt="el_hover_img5" />
                                                                     </a>
@@ -1326,7 +1326,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Smart Televisions</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Smart Televisions</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$45.00</span>
                                                                         <del>$55.25</del>
@@ -1349,7 +1349,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img9.jpg" alt="el_img9" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img9.jpg" alt="el_hover_img9" />
                                                                     </a>
@@ -1363,7 +1363,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">oppo Reno3 Pro</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">oppo Reno3 Pro</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$68.00</span>
                                                                         <del>$99.00</del>
@@ -1386,7 +1386,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img7.jpg" alt="el_img7" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img7.jpg" alt="el_hover_img7" />
                                                                     </a>
@@ -1400,7 +1400,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Audio Theaters</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Audio Theaters</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$45.00</span>
                                                                         <del>$55.25</del>
@@ -1423,7 +1423,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img5.jpg" alt="el_img5" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img5.jpg" alt="el_hover_img5" />
                                                                     </a>
@@ -1437,7 +1437,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Smart Televisions</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Smart Televisions</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$45.00</span>
                                                                         <del>$55.25</del>
@@ -1460,7 +1460,7 @@ class main extends Component {
                                                         <div class="item">
                                                             <div class="product_wrap">
                                                                 <div class="product_img">
-                                                                    <a href="shop-product-detail.html">
+                                                                    <a href="/detail">
                                                                         <img src="assets/images/el_img12.jpg" alt="el_img12" />
                                                                         <img class="product_hover_img" src="assets/images/el_hover_img12.jpg" alt="el_hover_img12" />
                                                                     </a>
@@ -1474,7 +1474,7 @@ class main extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="product_info">
-                                                                    <h6 class="product_title"><a href="shop-product-detail.html">Sound Equipment for Low</a></h6>
+                                                                    <h6 class="product_title"><a href="/detail">Sound Equipment for Low</a></h6>
                                                                     <div class="product_price">
                                                                         <span class="price">$45.00</span>
                                                                         <del>$55.25</del>
@@ -1554,13 +1554,13 @@ class main extends Component {
                                     <div class="item">
                                         <div class="deal_wrap">
                                             <div class="product_img">
-                                                <a href="shop-product-detail.html">
+                                                <a href="/detail">
                                                     <img src="assets/images/el_img1.jpg" alt="el_img1" />
                                                 </a>
                                             </div>
                                             <div class="deal_content">
                                                 <div class="product_info">
-                                                    <h5 class="product_title"><a href="shop-product-detail.html">Red & Black Headphone</a></h5>
+                                                    <h5 class="product_title"><a href="/detail">Red & Black Headphone</a></h5>
                                                     <div class="product_price">
                                                         <span class="price">$45.00</span>
                                                         <del>$55.25</del>
@@ -1580,13 +1580,13 @@ class main extends Component {
                                     <div class="item">
                                         <div class="deal_wrap">
                                             <div class="product_img">
-                                                <a href="shop-product-detail.html">
+                                                <a href="/detail">
                                                     <img src="assets/images/el_img2.jpg" alt="el_img2" />
                                                 </a>
                                             </div>
                                             <div class="deal_content">
                                                 <div class="product_info">
-                                                    <h5 class="product_title"><a href="shop-product-detail.html">Smart Watch External</a></h5>
+                                                    <h5 class="product_title"><a href="/detail">Smart Watch External</a></h5>
                                                     <div class="product_price">
                                                         <span class="price">$55.00</span>
                                                         <del>$95.00</del>
@@ -1606,13 +1606,13 @@ class main extends Component {
                                     <div class="item">
                                         <div class="deal_wrap">
                                             <div class="product_img">
-                                                <a href="shop-product-detail.html">
+                                                <a href="/detail">
                                                     <img src="assets/images/el_img3.jpg" alt="el_img3" />
                                                 </a>
                                             </div>
                                             <div class="deal_content">
                                                 <div class="product_info">
-                                                    <h5 class="product_title"><a href="shop-product-detail.html">Nikon HD camera</a></h5>
+                                                    <h5 class="product_title"><a href="/detail">Nikon HD camera</a></h5>
                                                     <div class="product_price">
                                                         <span class="price">$68.00</span>
                                                         <del>$99.25</del>
@@ -1667,15 +1667,15 @@ class main extends Component {
                                             <div class="item">
                                                 <div class="product_wrap">
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img class="image" src="assets/images/wall.jpg" alt="el_img2" height="240px" />
                                                             <div class="product_hover_img" >
-                                                                <ul style={{fontSize: '10pt'}}>
-                                                                    <li><b>Brand Name:</b> Paracitamol</li>
-                                                                    <li>Generic Name: ABC</li>
-                                                                    <li>Price: ABC</li>
-                                                                    <li>Composition: ABC</li>
-                                                                    <li>Details Information (Permalink)</li>
+                                                                <ul style={{fontSize: '9pt'}}>
+                                                                    <li><b>Brand Name:</b><i> Paracitamol</i></li>
+                                                                    <li><b>Generic Name: </b><i>ABC</i> </li>
+                                                                    <li><b>Price: </b><i>ABC</i> </li>
+                                                                    <li><b>Composition: </b><i>ABC</i> </li>
+                                                                    <li><i>Details Information (Permalink)</i></li>
                                                                 </ul>
                                                             </div>
                                                         </a>
@@ -1690,7 +1690,7 @@ class main extends Component {
 
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">{products.name} </a></h6>
+                                                        <h6 class="product_title"><a href="/detail">{products.name} </a></h6>
                                                         <div class="product_price">
                                                             <span class="price">Rs.{products.price} </span>
                                                             {/* <del>$95.00</del>
@@ -1742,13 +1742,13 @@ class main extends Component {
                                             <div class="item">
                                                 <div class="product_wrap">
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img2.jpg" alt="el_img2" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img2.jpg" alt="el_hover_img2" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">Smart Watch External</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">Smart Watch External</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$55.00</span>
                                                             <del>$95.00</del>
@@ -1769,13 +1769,13 @@ class main extends Component {
                                                 </div>
                                                 <div class="product_wrap">
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img1.jpg" alt="el_img1" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img1.jpg" alt="el_hover_img1" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">Red &amp; Black Headphone</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">Red &amp; Black Headphone</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$45.00</span>
                                                             <del>$55.25</del>
@@ -1797,13 +1797,13 @@ class main extends Component {
                                                 <div class="product_wrap">
                                                     <span class="pr_flash">New</span>
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img3.jpg" alt="el_img3" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img3.jpg" alt="el_hover_img3" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">Nikon HD camera</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">Nikon HD camera</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$68.00</span>
                                                             <del>$99.00</del>
@@ -1823,13 +1823,13 @@ class main extends Component {
                                             <div class="item">
                                                 <div class="product_wrap">
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img5.jpg" alt="el_img5" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img5.jpg" alt="el_hover_img5" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">Smart Televisions</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">Smart Televisions</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$45.00</span>
                                                             <del>$55.25</del>
@@ -1850,13 +1850,13 @@ class main extends Component {
                                                 </div>
                                                 <div class="product_wrap">
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img9.jpg" alt="el_img9" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img9.jpg" alt="el_hover_img9" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">oppo Reno3 Pro</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">oppo Reno3 Pro</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$68.00</span>
                                                             <del>$99.00</del>
@@ -1877,13 +1877,13 @@ class main extends Component {
                                                 </div>
                                                 <div class="product_wrap">
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img7.jpg" alt="el_img7" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img7.jpg" alt="el_hover_img7" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">Audio Theaters</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">Audio Theaters</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$45.00</span>
                                                             <del>$55.25</del>
@@ -1926,13 +1926,13 @@ class main extends Component {
                                             <div class="item">
                                                 <div class="product_wrap">
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img5.jpg" alt="el_img5" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img5.jpg" alt="el_hover_img5" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">Smart Televisions</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">Smart Televisions</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$45.00</span>
                                                             <del>$55.25</del>
@@ -1953,13 +1953,13 @@ class main extends Component {
                                                 </div>
                                                 <div class="product_wrap">
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img12.jpg" alt="el_img12" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img12.jpg" alt="el_hover_img12" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">Sound Equipment for Low</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">Sound Equipment for Low</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$45.00</span>
                                                             <del>$55.25</del>
@@ -1980,13 +1980,13 @@ class main extends Component {
                                                 </div>
                                                 <div class="product_wrap">
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img4.jpg" alt="el_img4" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img4.jpg" alt="el_hover_img4" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">Audio Equipment</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">Audio Equipment</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$69.00</span>
                                                             <del>$89.00</del>
@@ -2010,13 +2010,13 @@ class main extends Component {
                                                 <div class="product_wrap">
                                                     <span class="pr_flash bg-danger">Hot</span>
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img6.jpg" alt="el_img6" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img6.jpg" alt="el_hover_img6" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">Samsung Smart Phone</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">Samsung Smart Phone</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$55.00</span>
                                                             <del>$95.00</del>
@@ -2038,13 +2038,13 @@ class main extends Component {
                                                 <div class="product_wrap">
                                                     <span class="pr_flash bg-danger">Hot</span>
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img8.jpg" alt="el_img8" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img8.jpg" alt="el_hover_img8" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">Surveillance camera</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">Surveillance camera</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$55.00</span>
                                                             <del>$95.00</del>
@@ -2066,13 +2066,13 @@ class main extends Component {
                                                 <div class="product_wrap">
                                                     <span class="pr_flash bg-success">Sale</span>
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img10.jpg" alt="el_img10" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img10.jpg" alt="el_hover_img10" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">classical Headphone</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">classical Headphone</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$68.00</span>
                                                             <del>$99.00</del>
@@ -2115,13 +2115,13 @@ class main extends Component {
                                             <div class="item">
                                                 <div class="product_wrap">
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img11.jpg" alt="el_img11" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img11.jpg" alt="el_hover_img11" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">Basics High-Speed HDMI</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">Basics High-Speed HDMI</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$69.00</span>
                                                             <del>$89.00</del>
@@ -2142,13 +2142,13 @@ class main extends Component {
                                                 </div>
                                                 <div class="product_wrap">
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img7.jpg" alt="el_img7" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img7.jpg" alt="el_hover_img7" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">Audio Theaters</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">Audio Theaters</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$45.00</span>
                                                             <del>$55.25</del>
@@ -2171,13 +2171,13 @@ class main extends Component {
                                                 <div class="product_wrap">
                                                     <span class="pr_flash bg-danger">Hot</span>
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img8.jpg" alt="el_img8" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img8.jpg" alt="el_hover_img8" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">Surveillance camera</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">Surveillance camera</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$55.00</span>
                                                             <del>$95.00</del>
@@ -2200,13 +2200,13 @@ class main extends Component {
                                             <div class="item">
                                                 <div class="product_wrap">
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img5.jpg" alt="el_img5" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img5.jpg" alt="el_hover_img5" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">Smart Televisions</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">Smart Televisions</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$45.00</span>
                                                             <del>$55.25</del>
@@ -2227,13 +2227,13 @@ class main extends Component {
                                                 </div>
                                                 <div class="product_wrap">
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img9.jpg" alt="el_img9" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img9.jpg" alt="el_hover_img9" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">oppo Reno3 Pro</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">oppo Reno3 Pro</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$68.00</span>
                                                             <del>$99.00</del>
@@ -2254,13 +2254,13 @@ class main extends Component {
                                                 </div>
                                                 <div class="product_wrap">
                                                     <div class="product_img">
-                                                        <a href="shop-product-detail.html">
+                                                        <a href="/detail">
                                                             <img src="assets/images/el_img1.jpg" alt="el_img1" />
                                                             <img class="product_hover_img" src="assets/images/el_hover_img1.jpg" alt="el_hover_img1" />
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
-                                                        <h6 class="product_title"><a href="shop-product-detail.html">Red &amp; Black Headphone</a></h6>
+                                                        <h6 class="product_title"><a href="/detail">Red &amp; Black Headphone</a></h6>
                                                         <div class="product_price">
                                                             <span class="price">$45.00</span>
                                                             <del>$55.25</del>
