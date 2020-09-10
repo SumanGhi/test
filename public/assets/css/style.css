@@ -5008,7 +5008,8 @@ footer .widget_title {
 	
 }
 .pr_desc {
-	display: none;
+	display: block;
+	font-size: 9pt;
 }
 .pr_flash {
 	background-color: #FF9F00;

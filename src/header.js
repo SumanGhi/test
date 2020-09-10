@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import Product from './productData'
 
 class header extends Component {
     
-    render() {
+    render(props) {
         return (
             <div>
                 {/* <!-- LOADER --> */}
@@ -75,13 +74,14 @@ class header extends Component {
                                         <ul class="header_list">
                                             <li><a href="#"><i class="ti-control-shuffle"></i><span>Compare</span></a></li>
                                             <li><a href="#"><i class="ti-heart"></i><span>Wishlist</span></a></li>
-                                            <li><a href="/"><i class="ti-user"></i><span>Login</span></a></li>
+                                            <li><a href="login"><i class="ti-user"></i><span>Login</span></a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                     <div class="bottom_header dark_skin main_menu_uppercase">
                         <div class="container">
                             <nav class="navbar navbar-expand-lg">
@@ -258,7 +258,7 @@ class header extends Component {
                                     </ul>
                                 </div>
                                 <ul class="navbar-nav attr-nav align-items-center">
-                                    <li><a href="javascript:void(0);" class="nav-link search_trigger"><i class="linearicons-magnifier"></i></a>
+                                    <li><a href="" class="nav-link search_trigger"><i class="linearicons-magnifier"></i></a>
                                         <div class="search_wrap">
                                             <span class="close-search"><i class="ion-ios-close-empty"></i></span>
                                             <form>
@@ -270,8 +270,8 @@ class header extends Component {
                                     <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-toggle="dropdown"><i class="linearicons-cart"></i><span class="cart_count">2</span></a>
                                         <div class="cart_box dropdown-menu dropdown-menu-right">
                                             <ul class="cart_list">
-                                                {Product.map((product)=>(
-                                                   <li>
+                                                {this.props.cart.map((product)=>(
+                                                   <li key={product.id}>
                                                     <a href="#" class="item_remove"><i class="ion-close"></i></a>
                                                     <a href="#"><img src="assets/images/cart_thamb1.jpg"  alt="cart_thumb1" />{product.name}</a>
                                                     <span class="cart_quantity"> {product.quantity} x <span class="cart_amount"> <span class="price_symbole">Rs.</span></span>{product.price}</span>

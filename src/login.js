@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom'
 
 const initialState = {
     email: "",
@@ -19,20 +18,20 @@ class login extends Component {
         })
     }
 
-    validate = () => {
+    validate = (props) => {
         let emailError = ""
         let passwordError = ""
         if (!this.state.email) {
             emailError = "*Please fill out this field"
         }
 
-        else if (this.state.email !== "s@gmail.com") {
+        else if (this.state.email !== this.props.login.email) {
             passwordError = "invalid credential"
         }
         if (!this.state.password) {
             passwordError = "*Please fill out this field"
         }
-        else if (this.state.password !== '123') {
+        else if (this.state.password !== this.props.login.password) {
             passwordError = "invalid credential"
         }
         if (emailError || passwordError) {
@@ -47,8 +46,8 @@ class login extends Component {
         if (isValid) {
             console.log(this.state)
             this.setState(initialState)
-            return <Redirect to="/index" />
-
+            this.props.history.push('/index')
+            this.props.history.go('/index')
         }
     }
 
@@ -56,7 +55,6 @@ class login extends Component {
         return (
             <div>
                 
-
                 {/* <!-- START SECTION BREADCRUMB --> */}
                 <div class="breadcrumb_section bg_gray page-title-mini">
                     <div class="container">
@@ -93,7 +91,7 @@ class login extends Component {
                                             <div class="heading_s1">
                                                 <h3>Login</h3>
                                             </div>
-                                            <form method="post" onSubmit={this.handleSubmit}>
+                                            <form method="POST" onSubmit={this.handleSubmit}>
                                                 <div class="form-group">
                                                     <input type="text" required="" class="form-control" name="email" placeholder="Your Email" value={this.state.email} onChange={this.handleChange} />
                                                     <div style={{ color: 'red', fontSize: '12px' }}>{this.state.emailError} </div>
@@ -106,7 +104,7 @@ class login extends Component {
                                                     <div class="chek-form">
                                                         <div class="custome-checkbox">
                                                             <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox1" value="" />
-                                                            <label class="form-check-label" for="exampleCheckbox1"><span>Remember me</span></label>
+                                                            <label class="form-check-label" htmlFor="exampleCheckbox1"><span>Remember me</span></label>
                                                         </div>
                                                     </div>
                                                     <a href="#">Forgot password?</a>
@@ -122,7 +120,7 @@ class login extends Component {
                                                 <li><a href="#" class="btn btn-facebook"><i class="ion-social-facebook"></i>Facebook</a></li>
                                                 <li><a href="#" class="btn btn-google"><i class="ion-social-googleplus"></i>Google</a></li>
                                             </ul>
-                                            <div class="form-note text-center">Don't Have an Account? <a href="signup.html">Sign up now</a></div>
+                                            <div class="form-note text-center">Don't Have an Account? <a href="signup">Sign up now</a></div>
                                         </div>
                                     </div>
                                 </div>

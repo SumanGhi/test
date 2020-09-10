@@ -1,6 +1,84 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
+const initialState = {
+    name: "",
+    email: "",
+    password: "",
+    rePassword: "",
+    nameError: "",
+    passwordError: "",
+    emailError: "",
+    rePassError: "",
+    checkbox: "",
+    error: ""
+}
 class signup extends Component {
+    state = initialState
+
+    handleChange = event => {
+        const isCheckbox = event.target.type === "checkbox"
+        this.setState({
+            [event.target.name]: isCheckbox
+                ? event.target.checked
+                : event.target.value
+        })
+    }
+
+    validate = () => {
+        let nameError = ""
+        let emailError , rePassError, error = ""
+        let passwordError = ""
+        if (!this.state.name) {
+            nameError = "*Please fill out this field"
+        }
+        if (!this.state.email) {
+            emailError = "*Please fill out this field"
+        }
+        if (!this.state.password ) {
+            passwordError = "*Please fill out this field"
+        }
+        if (!this.state.rePassword) {
+            rePassError = "*Please fill out this field"
+        }
+        if(!this.state.checkbox){
+            error = "*accept?"
+        }
+
+        else if (this.state.password !== this.state.rePassword) {
+            rePassError = "Password doesn't match"
+        }
+        if (nameError || passwordError || emailError || rePassError || error ) {
+            this.setState({ nameError ,passwordError , emailError , rePassError, error  })
+            return false;
+        }
+        return true
+    }
+    handleSubmit = event => {
+        event.preventDefault()
+        const isValid = this.validate()
+        if (isValid) {
+            console.log(this.state)
+            axios
+            .post(
+                "http://localhost:3000/signup",
+                {
+                    user: {
+                        name: this.state.name,
+                        email: this.state.email,
+                        password: this.state.password
+                    }
+                }
+            )
+            .catch(error=>{
+                console.log("registration error")
+            })
+            this.setState(initialState)
+            this.props.history.push('/login')
+
+        }
+    }
+
     render() {
         return (
             <div>
@@ -41,24 +119,29 @@ class signup extends Component {
                                             <div class="heading_s1">
                                                 <h3>Create an Account</h3>
                                             </div>
-                                            <form method="post">
+                                            <form method="post" onSubmit={this.handleSubmit}>
                                                 <div class="form-group">
-                                                    <input type="text" required="" class="form-control" name="name" placeholder="Enter Your Name" />
+                                                    <input type="text"  value={this.state.name} onChange={this.handleChange}  required="" class="form-control" name="name" placeholder="Enter Your Name" />
+                                                    <div style={{ color: 'red', fontSize: '12px' }}>{this.state.nameError} </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="text" required="" class="form-control" name="email" placeholder="Enter Your Email" />
+                                                    <input type="text"  value={this.state.email} onChange={this.handleChange}  required="" class="form-control" name="email" placeholder="Enter Your Email" />
+                                                    <div style={{ color: 'red', fontSize: '12px' }}>{this.state.emailError} </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input class="form-control" required="" type="password" name="password" placeholder="Password" />
+                                                    <input class="form-control"  value={this.state.password} onChange={this.handleChange}  required="" type="password" name="password" placeholder="Password" />
+                                                    <div style={{ color: 'red', fontSize: '12px' }}>{this.state.passwordError} </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input class="form-control" required="" type="password" name="password" placeholder="Confirm Password" />
+                                                    <input class="form-control"  value={this.state.rePassword} onChange={this.handleChange}  required="" type="password" name="rePassword" placeholder="Confirm Password" />
+                                                    <div style={{ color: 'red', fontSize: '12px' }}>{this.state.rePassError} </div>
                                                 </div>
                                                 <div class="login_footer form-group">
                                                     <div class="chek-form">
                                                         <div class="custome-checkbox">
-                                                            <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox2" value="" />
+                                                            <input class="form-check-input" onChange={this.handleChange} type="checkbox" name="checkbox" id="exampleCheckbox2" value="" />
                                                             <label class="form-check-label" for="exampleCheckbox2"><span>I agree to terms &amp; Policy.</span></label>
+                                                            <div style={{ color: 'red', fontSize: '12px' }}>{this.state.error} </div>
                                                         </div>
                                                     </div>
                                                 </div>
