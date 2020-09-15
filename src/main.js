@@ -5,7 +5,7 @@ import DealOfDay from './dealOfDay'
 import Exclusive from './exclusiveProduct'
 
 class main extends Component {
-    render(props) {
+    render() {
         return (
             <div>
                 
@@ -202,7 +202,7 @@ class main extends Component {
                                     </ul>
                                 </li>
                             </ul>
-                            <div class="more_categories">More Categories</div>
+                            {/* <div class="more_categories">More Categories</div> */}
                         </div>
                     </div>
                 </div>

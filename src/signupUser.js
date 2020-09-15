@@ -4,12 +4,6 @@ import axios from 'axios';
 const initialState = {
     name: "",
     email: "",
-    pardesh: "",
-    district: "",
-    address: "",
-    DoB: "",
-    gender: "",
-    contactNo: "",
     password: "",
     rePassword: "",
     nameError: "",
@@ -17,9 +11,7 @@ const initialState = {
     emailError: "",
     rePassError: "",
     checkbox: "",
-    error: "",
-    addressError:"",
-    contactError:""
+    error: ""
 }
 class signup extends Component {
     state = initialState
@@ -41,15 +33,8 @@ class signup extends Component {
         let nameError = ""
         let emailError, rePassError, error = ""
         let passwordError = ""
-        let addressError, contactError =""
         if (!this.state.name) {
             nameError = "*Please fill out this field"
-        }
-        if(!this.state.address){
-            addressError="*Please fill out this field"
-        }
-        if(!this.state.contactNo){
-            contactError="*Please fill out this field"
         }
         if (!this.state.email) {
             emailError = "*Please fill out this field"
@@ -67,8 +52,8 @@ class signup extends Component {
         else if (this.state.password !== this.state.rePassword) {
             rePassError = "Password doesn't match"
         }
-        if (nameError || passwordError || emailError || rePassError || error || addressError || contactError) {
-            this.setState({ nameError, passwordError, emailError, rePassError, error, addressError, contactError })
+        if (nameError || passwordError || emailError || rePassError || error) {
+            this.setState({ nameError, passwordError, emailError, rePassError, error })
             return false;
         }
         return true
@@ -85,9 +70,7 @@ class signup extends Component {
                         user: {
                             name: this.state.name,
                             email: this.state.email,
-                            password: this.state.password,
-                            address: this.state.address,
-                            contactNo: this.state.contactNo
+                            password: this.state.password
                         }
                     }
                 )
@@ -111,7 +94,7 @@ class signup extends Component {
                         <div class="row align-items-center">
                             <div class="col-md-6">
                                 <div class="page-title">
-                                    <h1>Register</h1>
+                                    <h1>Users Registration</h1>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -167,6 +150,7 @@ class signup extends Component {
                                                         </select>
                                                     </div>
                                                 </div>
+
                                                 <div class="form-group" >
                                                     <input class="form-control" value={this.state.address} onChange={this.handleChange} required="" name="address" placeholder="Address" />
                                                     {/* <div style={{ display: "flex" }} ><input class="form-control" style={{ width: "90%" }} value={this.state.address} onChange={this.handleChange} required="" name="address" placeholder="Address line 1" />
@@ -174,30 +158,12 @@ class signup extends Component {
 
                                                     <div style={{ color: 'red', fontSize: '12px' }}>{this.state.addressError} </div>
                                                 </div>
-                                                <div style={{ display: "flex" }} >
-                                                    <div class="form-group">
-                                                        <input class="form-control" value={this.state.DoB} onChange={this.handleChange} required="" type="date" max="2005-01-02" value="1996-07-17" name="DoB" />
-                                                    </div>
-                                                    <div class="form-group" style={{marginLeft:"20px"}}>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input type="radio" class="form-check-input" name="optradio" checked/>Male
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input type="radio" class="form-check-input" name="optradio" />Female
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input type="radio" class="form-check-input" name="optradio" />Other
-                                                            </label>
-                                                        </div>
-                                                    </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" value={this.state.businessType} onChange={this.handleChange} required="" name="Business Type" placeholder="Business Type" />
+                                                    <div style={{ color: 'red', fontSize: '12px' }}>{this.state.businessTypeError} </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input class="form-control" value={this.state.contactNo} onChange={this.handleChange} required="" name="contactNo" placeholder="Contact" />
+                                                    <input class="form-control" value={this.state.contact} onChange={this.handleChange} required="" name="contact" placeholder="Contact" />
                                                     <div style={{ color: 'red', fontSize: '12px' }}>{this.state.contactError} </div>
                                                 </div>
                                                 <div class="form-group">

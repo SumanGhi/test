@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { createBrowserHistory } from "history";
 import Login from './login'
 import Header1 from './header'
 import Header2 from './header2'
@@ -8,41 +9,48 @@ import Main from './main'
 import ProductDetail from './productDetail'
 import Checkout from './checkout'
 import Signup from './signup'
+import SignupUser from './signupUser'
 import Contact from './contact'
 import Error from './error'
 import data from './myList.json'
-import { createBrowserHistory } from "history";
 
 const customHistory = createBrowserHistory();
 
 class App extends Component {
-  constructor() {
-    super()
-    this.state = {
-      loggedIn: "false",
-      user: {}
-    }
+  state = {loggedIn: "true"}
+  handleLoggedIn = (logvalue)=>{
+    this.setState({loggedIn: logvalue})
   }
-  render() {
+  render(props) {
     const loggedIn = this.state.loggedIn
+
     return (
       <div>
-        {loggedIn === "true" ? 
+        {loggedIn === "false" ? 
         (<Header2 />) : 
         (<Header1 cart={data.cart} />)}
         <BrowserRouter>
           <Switch>
             <Redirect exact from="/" to="/login" />
 
-
             <Route path="/index" >
               <Main trending={data.trending} />
             </Route>
+
             <Route path="/detail" component={ProductDetail} />
+
             <Route path="/checkout" component={Checkout} />
+
             <Route path="/signup" component={Signup} />
+
+            <Route path="/admin" component={SignupUser} />
+
             <Route path="/contact" component={Contact} />
-            <Route path="/login" component={() => <Login login={data.login} loggedIn = {loggedIn} history={customHistory} />} />
+
+            <Route path="/login" component={() =>
+              <Login login={data.login} handleLoggedIn={this.handleLoggedIn} history={customHistory} />} 
+              />
+            
             <Route component={Error} />
           </Switch>
         </BrowserRouter>
