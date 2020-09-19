@@ -1,0 +1,83 @@
+{
+    "login":{
+        "email": "s@gmail.com",
+        "password": "123"
+    },
+    "cart":[
+        {
+            "id": 1,
+            "name": "paracitamol",
+            "quantity": 10,
+            "price": 120
+        },
+        {
+            "id": 2,
+            "name": "baby milk",
+            "quantity": 1,
+            "price": 400
+        },
+        {
+            "id": 3,
+            "name": "Sanitary Pad",
+            "quantity": 2,
+            "price": 200
+        }
+    ],
+    "trending":[
+        {
+            "id": 1,
+            "name": "paracitamol",
+            "price": 10,
+            "detail": "You can have it in mild fever without prescription",
+            "img": "",
+            "generic": "",
+            "composition": "salt .5g, sugar .5g"
+        },
+        {
+            "id": 2,
+            "name": "baby powder",
+            "price": 100,
+            "detail": "This is for baby under 5 years.",
+            "img": "",
+            "generic": "",
+            "composition": "green leafs"
+        },
+        {
+            "id": 3,
+            "name": "sanitary pad",
+            "price": 150,
+            "detail": "This is for woman",
+            "img": "",
+            "generic": "",
+            "composition": "fur, babana peel"
+        },
+        {
+            "id": 4,
+            "name": "face wash",
+            "price": 200,
+            "detail": "It makes your skin glow",
+            "img": "",
+            "generic": "",
+            "composition": "ginger .5g, onion .4g"
+        },
+        {
+            "id": 5,
+            "name": "jomsom powder",
+            "price": 250,
+            "detail": "It is used for baby under 2 years",
+            "img": "",
+            "generic": "",
+            "composition": "powder .5g, gel .5g"
+        },
+        {
+            "id": 6,
+            "name": "DSM Gel",
+            "price": 250,
+            "detail": "Pain relief",
+            "img": "",
+            "generic": "",
+            "composition": "salt .5g, oil .5g"
+        }
+    ]
+    
+}
