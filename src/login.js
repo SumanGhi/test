@@ -4,8 +4,7 @@ const initialState = {
     email: "",
     password: "",
     emailError: "",
-    passwordError: "",
-    isLoggedIn: "false"
+    passwordError: ""
 }
 
 class login extends Component {
@@ -47,6 +46,8 @@ class login extends Component {
         const isValid = this.validate()
         if (isValid) {
             console.log(this.state)
+             let logvalue = "true"    
+             this.props.handleLoggedIn(logvalue)
 
 this.setState(initialState)
             this.props.history.push('/index')

@@ -12,22 +12,20 @@ import Signup from './components/signup'
 import SignupUser from './signupUser'
 import Contact from './components/contact'
 import Error from './components/error'
-import data from './myList.json'
+import Brand from './components/brand'
+import data from'./myList.json'
+import Category from './components/subCategory2'
 
 const customHistory = createBrowserHistory();
 
 class App extends Component {
-  state = {loggedIn: "true"}
-  handleLoggedIn = (logvalue)=>{
-    this.setState({loggedIn: logvalue})
-  }
-  render(props) {
-    const loggedIn = this.state.loggedIn
+  render() {
+    const loggedIn = data.login.isLoggedIn
 
     return (
       <div>
-        {loggedIn === "false" ? 
-        (<Header2 />) : 
+        {loggedIn === "true" ? 
+        (<Header2 cart={data.cart} />) : 
         (<Header1 cart={data.cart} />)}
         <BrowserRouter>
           <Switch>
@@ -39,6 +37,14 @@ class App extends Component {
 
             <Route path="/detail" component={ProductDetail} />
 
+            <Route path="/brand" >
+              <Brand brands={data.trending} />
+            </Route>
+
+            <Route path="/category" >
+              <Category />
+            </Route>
+
             <Route path="/checkout" component={Checkout} />
 
             <Route path="/signup" component={Signup} />
@@ -48,7 +54,7 @@ class App extends Component {
             <Route path="/contact" component={Contact} />
 
             <Route path="/login" component={() =>
-              <Login login={data.login} handleLoggedIn={this.handleLoggedIn} history={customHistory} />} 
+              <Login login={data.login} history={customHistory} />} 
               />
             
             <Route component={Error} />
@@ -62,30 +68,3 @@ class App extends Component {
 }
 
 export default App;
-
-// import React, { Component } from 'react'
-// import io from '/socket.io/socket.io-client'
-// import OAuth from './components/auth/0Auth'
-// // import { API_URL } from './config'
-// import './App.css'
-// const socket = io('https://localhost:8080/__provider__/callback')
-// const providers = ['twitter', 'google', 'facebook', 'github']
-
-// export default class App extends Component {
-
-//   render() {
-//     return (
-//       <div className={'wrapper'}>
-//         <div className={'container'}>
-//           {providers.map(provider => 
-//             <OAuth 
-//               provider={provider}
-//               key={provider}
-//               socket={socket}
-//             />
-//           )}
-//         </div>
-//       </div>
-//     )
-//   }
-// }

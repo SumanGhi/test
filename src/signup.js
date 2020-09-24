@@ -46,7 +46,7 @@ class signup extends Component {
 
         if(!this.state.contactNo){
             contactError="*Please fill out this field"
-        } else if(!Number(this.state.contactNo) || this.state.contactNo.length != 10){
+        } else if(!Number(this.state.contactNo) || this.state.contactNo.length !== 10){
             contactError = "*invalid number"
         }
 
@@ -54,7 +54,7 @@ class signup extends Component {
         let lastDotPos =this.state.email.lastIndexOf('.');
         if (!this.state.email) {
             emailError = "*Please fill out this field"
-        }else if (!(lastAtPos < lastDotPos && lastAtPos > 0 &&this.state.email.indexOf('@@') == -1 && lastDotPos > 2 && (this.state.email.length - lastDotPos) > 2)) {
+        }else if (!(lastAtPos < lastDotPos && lastAtPos > 0 &&this.state.email.indexOf('@@') === -1 && lastDotPos > 2 && (this.state.email.length - lastDotPos) > 2)) {
             emailError = "Email is not valid";
           }
 
@@ -96,18 +96,17 @@ class signup extends Component {
             console.log(this.state)
             axios
                 .post(
-                    {'Content-Type': 'application/json'},
-                    "http://127.0.0.1:5000/user/login",
+                    "http://localhost:3000/signup",
                     {
                         user: {
                             FirstName: this.state.FirstName,
                             LastName: this.state.LastName,
-                            userEmail: this.state.email,
+                            email: this.state.email,
                             password: this.state.password,
                             address: this.state.address,
                             contactNo: this.state.contactNo,
-                            userGender: this.state.gender,
-                            userDoB: this.state.DoB
+                            gender: this.state.gender,
+                            DoB: this.state.DoB
                         }
                     }
                 )

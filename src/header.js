@@ -85,7 +85,7 @@ class header extends Component {
                     <div class="bottom_header dark_skin main_menu_uppercase">
                         <div class="container">
                             <nav class="navbar navbar-expand-lg">
-                                <a class="navbar-brand" href="index.html">
+                                <a class="navbar-brand" href="index">
                                     <img class="logo_light" src="assets/images/logo_light.png" alt="logo" />
                                     <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo" />
                                 </a>

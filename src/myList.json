@@ -1,8 +1,15 @@
 {
     "login":{
         "email": "s@gmail.com",
-        "password": "123"
+        "password": "123",
+        "isLoggedIn": "false"
     },
+    "category":[
+        {
+            "id":1,
+            "name":"baby milk"
+        }
+    ],
     "cart":[
         {
             "id": 1,
