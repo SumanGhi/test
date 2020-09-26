@@ -38,7 +38,7 @@ class trendingProduct extends Component {
                                             <div class="product_wrap">
                                                 <div class="product_img">
                                                     <a href="/detail">
-                                                        <img class="image" src="assets/images/wall.jpg" alt="el_img2" height="240px" />
+                                                        <img class="image" src="assets/images/el_img2.jpg" alt="el_img2" height="240px" />
                                                         <div class="product_hover_img" >
                                                             <ul style={{ fontSize: '9pt' }}>
                                                                 <li><b>Brand Name: </b><i>{products.name} </i></li>

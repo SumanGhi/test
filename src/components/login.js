@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 const initialState = {
     email: "",
     password: "",
     emailError: "",
     passwordError: "",
-    isLoggedIn: "false"
+    isLoggedIn: false,
+    rememberMe: false
 }
 
 class login extends Component {
@@ -48,7 +50,22 @@ class login extends Component {
         if (isValid) {
             console.log(this.state)
 
-this.setState(initialState)
+            axios
+                .post(
+                    {'Content-Type': 'application/json'},
+                    "http://127.0.0.1:5000/user/login",
+                    {
+                        user: {
+                            email: this.state.email,
+                            password: this.state.password,
+                            rememberMe: this.state.rememberMe
+                        }
+                    }
+                )
+                .catch(error => {
+                    console.log("registration error")
+                })
+            this.setState(initialState)
             this.props.history.push('/index')
             this.props.history.go('/index')
         }
@@ -58,7 +75,7 @@ this.setState(initialState)
     render() {
         return (
             <div>
-                
+
                 {/* <!-- START SECTION BREADCRUMB --> */}
                 <div class="breadcrumb_section bg_gray page-title-mini">
                     <div class="container">
@@ -107,7 +124,7 @@ this.setState(initialState)
                                                 <div class="login_footer form-group">
                                                     <div class="chek-form">
                                                         <div class="custome-checkbox">
-                                                            <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox1" value="" />
+                                                            <input class="form-check-input" type="checkbox" name="rememberMe" id="exampleCheckbox1" value={this.state.rememberMe} onChange={this.handleChange} />
                                                             <label class="form-check-label" htmlFor="exampleCheckbox1"><span>Remember me</span></label>
                                                         </div>
                                                     </div>

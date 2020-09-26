@@ -105,7 +105,7 @@ class header extends Component {
                                             </div>
                                         </li>
                                         <li class="dropdown">
-                                            <a class="dropdown-toggle nav-link active" href="#" data-toggle="dropdown">Pages</a>
+                                            <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Pages</a>
                                             <div class="dropdown-menu">
                                                 <ul>
                                                     <li><a class="dropdown-item nav-link nav_item" href="about.html">About Us</a></li>

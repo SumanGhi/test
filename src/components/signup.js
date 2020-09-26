@@ -97,7 +97,7 @@ class signup extends Component {
             axios
                 .post(
                     {'Content-Type': 'application/json'},
-                    "http://127.0.0.1:5000/user/login",
+                    "http://127.0.0.1:5000/user/save",
                     {
                         user: {
                             FirstName: this.state.FirstName,

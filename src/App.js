@@ -14,7 +14,7 @@ import Contact from './components/contact'
 import Error from './components/error'
 import Brand from './components/brand'
 import data from'./myList.json'
-import Category from './components/subCategory2'
+import Category from './components/subCategory'
 
 const customHistory = createBrowserHistory();
 

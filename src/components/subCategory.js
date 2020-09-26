@@ -1,38 +1,77 @@
-import React from 'react'
+import React, { Component } from 'react'
+import yes from '../myList.json'
 
-export default function subCategory() {
+export default class subCategory2 extends Component {
 
     state = {
-        selectedTabId: '1'
+        selectedTabId: 1
     }
-      
-      isActive= (id)=> {
-        return this.state.selectedTabId === id;
-      }
-      
-      setActiveTab =(selectedTabId)=> {
+
+    isActive = (id) => {
+        console.log(id)
+        return (this.state.selectedTabId === id)
+
+    }
+
+    setActiveTab = (selectedTabId) => {
         this.setState({ selectedTabId });
-      }
+    }
 
-    const yes = [1, 2, 3, , 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-    return (
-        <div class="container row">
-            <div class="col">
-                <div class="sub-category">
-                    
-                    <ul>
-                        {yes.map((yes)=>
-                        <li className={ this.props.isActive ? 'navigation--active': '' }
-                        onClick={ this.props.onActiveTab }>
-                            <div>Homeopathic </div><div class="forward"></div>
-                        </li>)}
-                    </ul> 
+    render() {
+        return (
+            <div>
+                {/* <!-- START SECTION BREADCRUMB --> */}
+                <div class="breadcrumb_section bg_gray page-title-mini">
+                    <div class="container">
+                        {/* <!-- STRART CONTAINER --> */}
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="page-title">
+                                    <h1>Category</h1>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <ol class="breadcrumb justify-content-md-end">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                                    <li class="breadcrumb-item active">Category</li>
+                                </ol>
+                            </div>
+                        </div>
+                        {/* </div><!-- END CONTAINER--> */}
+                    </div>
                 </div>
-            </div>
+                {/* <!-- END SECTION BREADCRUMB --> */}
+                
+                <div class="container row">
+                    <div class="col-sm-4 category">
+                        <ul>
+                            {yes.category.map((yes) =>
+                            <div key={yes.id} class={this.isActive(yes.id) ? "sub-category sactive" : 'sub-category'}
+                                onClick={this.setActiveTab.bind(this, yes.id)}>
 
-            <div class="col">
-                <h1>Yes</h1>
+                                <li >
+                                    <div> {yes.name} </div><div class={this.isActive(yes.id) ? "forward" : ""}></div>
+                                </li>
+
+                            </div>)}
+                         </ul>
+                    </div>
+
+                    
+                    <div class="col generic_list" >
+                        {yes.category.map((yes) =>
+                        <div class={this.isActive(yes.id) ? "genric_active" : 'generic'}>
+                        {yes["sub-category"].map((sub)=>
+                        <div style={{marginTop:'12px'}}>
+                        <a href="brand"><h4>- {sub.name}</h4></a>
+                        </div>)}
+                        </div>
+                        )}
+                    </div> 
+                </div>
+               
             </div>
-        </div>
-    )
+        )
+    }
 }

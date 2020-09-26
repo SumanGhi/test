@@ -13,7 +13,7 @@ class ftoProduct extends Component {
                                     <div class="col-12">
                                         <div class="heading_tab_header">
                                             <div class="heading_s2">
-                                                <h4>Featured Products</h4>
+                                                <h4>Homeopathic</h4>
                                             </div>
                                             <div class="view_all">
                                                 <a href="#" class="text_default"><span>View All</span></a>
@@ -197,7 +197,7 @@ class ftoProduct extends Component {
                                     <div class="col-12">
                                         <div class="heading_tab_header">
                                             <div class="heading_s2">
-                                                <h4>Top Rated Products</h4>
+                                                <h4>Allopathic</h4>
                                             </div>
                                             <div class="view_all">
                                                 <a href="#" class="text_default"><span>View All</span></a>
@@ -386,7 +386,7 @@ class ftoProduct extends Component {
                                     <div class="col-12">
                                         <div class="heading_tab_header">
                                             <div class="heading_s2">
-                                                <h4>On Sale Products</h4>
+                                                <h4>Ayuverdic</h4>
                                             </div>
                                             <div class="view_all">
                                                 <a href="#" class="text_default"><span>View All</span></a>

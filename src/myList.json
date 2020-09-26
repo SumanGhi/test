@@ -7,7 +7,88 @@
     "category":[
         {
             "id":1,
-            "name":"baby milk"
+            "name":"baby milk",
+            "sub-category":[
+                {
+                "id":1,
+                "name":"baby milk1"
+                },
+                {
+                    "id":2,
+                    "name":"baby milk2"
+                }
+
+            ]  
+        },
+        {
+            "id":2,
+            "name":"baby powder",
+            "sub-category":[
+                {
+                    "id":1,
+                    "name":"baby powder1"
+                }
+            ]
+        },
+        {
+            "id":3,
+            "name":"baby milk",
+            "sub-category":[
+                {
+                "id":1,
+                "name":"baby milk1"
+                },
+                {
+                    "id":2,
+                    "name":"baby milk2"
+                }
+
+            ]  
+        },
+        {
+            "id":4,
+            "name":"baby milk",
+            "sub-category":[
+                {
+                "id":1,
+                "name":"baby milk1"
+                },
+                {
+                    "id":2,
+                    "name":"baby milk2"
+                }
+
+            ]  
+        },
+        {
+            "id":5,
+            "name":"baby milk",
+            "sub-category":[
+                {
+                "id":1,
+                "name":"baby milk1"
+                },
+                {
+                    "id":2,
+                    "name":"baby milk2"
+                }
+
+            ]  
+        },
+        {
+            "id":6,
+            "name":"baby milk",
+            "sub-category":[
+                {
+                "id":1,
+                "name":"baby milk1"
+                },
+                {
+                    "id":2,
+                    "name":"baby milk2"
+                }
+
+            ]  
         }
     ],
     "cart":[
@@ -88,3 +169,4 @@
     ]
     
 }
+
