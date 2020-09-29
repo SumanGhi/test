@@ -4,7 +4,8 @@ import yes from '../myList.json'
 export default class subCategory2 extends Component {
 
     state = {
-        selectedTabId: 1
+        selectedTabId: 1,
+        selectedCategoryId: ''
     }
 
     isActive = (id) => {
@@ -16,7 +17,14 @@ export default class subCategory2 extends Component {
     setActiveTab = (selectedTabId) => {
         this.setState({ selectedTabId });
     }
-
+    setCategoryTab = (selectedCategoryId) => {
+        this.setState({ selectedCategoryId });
+        prompt(this.state.selectedTabId)
+        prompt(this.state.selectedCategoryId)
+        this.props.detectProductId(this.state.selectedTabId)
+        this.props.detectCategoryId(this.state.selectedCategoryId)
+        
+    }
     render() {
         return (
             <div>
@@ -63,8 +71,8 @@ export default class subCategory2 extends Component {
                         {yes.category.map((yes) =>
                         <div class={this.isActive(yes.id) ? "genric_active" : 'generic'}>
                         {yes["sub-category"].map((sub)=>
-                        <div style={{marginTop:'12px'}}>
-                        <a href="brand"><h4>- {sub.name}</h4></a>
+                        <div key={sub.id} style={{marginTop:'12px'}}>
+                        <a href="brand"><h4 onClick={this.setCategoryTab.bind(this,sub.id)}>- {sub.name}</h4></a>
                         </div>)}
                         </div>
                         )}

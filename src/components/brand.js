@@ -6,10 +6,10 @@ import yes from '../myList.json'
 
 export default class brand extends Component {
     state = {
-        selectedTabId: 1,
-        selectedCategoryId: 1
+        selectedTabId: this.props.productId,
+        selectedCategoryId: this.props.categoryId
     }
-
+    
     isActive = (id) => {
         return (this.state.selectedTabId === id)
 
@@ -24,9 +24,10 @@ export default class brand extends Component {
         let selectedCategoryId=''
         this.setState({ selectedTabId,selectedCategoryId });
     }
-    render(props) {
+    render() {
         return (
             <div>
+                
                 {/* <!-- START SECTION BREADCRUMB --> */}
                 <div class="breadcrumb_section bg_gray page-title-mini">
                     <div class="container">

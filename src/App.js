@@ -15,10 +15,22 @@ import Error from './components/error'
 import Brand from './components/brand'
 import data from'./myList.json'
 import Category from './components/subCategory'
+import Prescription from './uploadPrescription'
 
 const customHistory = createBrowserHistory();
 
 class App extends Component {
+  state = {
+    categoryId: '',
+    classId: ''
+  }
+  detectCategoryId = (categoryId)=>{
+    this.setState(categoryId)
+  }
+  detectProductId = (classId)=>{
+    console.log(classId)
+    this.setState(classId)
+  }
   render() {
     const loggedIn = data.login.isLoggedIn
 
@@ -38,11 +50,11 @@ class App extends Component {
             <Route path="/detail" component={ProductDetail} />
 
             <Route path="/brand" >
-              <Brand brands={data.trending} />
+              <Brand brands={data.trending} categoryId={this.state.categoryId} classId={this.state.classId} />
             </Route>
 
             <Route path="/category" >
-              <Category />
+              <Category detectCategoryId={this.detectCategoryId} detectProductId={this.detectProductId} />
             </Route>
 
             <Route path="/checkout" component={Checkout} />
@@ -52,6 +64,8 @@ class App extends Component {
             <Route path="/admin" component={SignupUser} />
 
             <Route path="/contact" component={Contact} />
+
+            <Route path="/upload-prescription" component={Prescription} />
 
             <Route path="/login" component={() =>
               <Login login={data.login} history={customHistory} />} 

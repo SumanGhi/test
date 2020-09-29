@@ -254,7 +254,12 @@ class header extends Component {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li><a class="nav-link nav_item" href="contact.html">Contact Us</a></li>
+                                        <li><a class="nav-link nav_item" href="contact">Contact Us</a></li>
+                                        <li>
+                                            <div style={{marginTop:'15px', backgroundColor:'orange'}}>
+                                            <a class="nav-link nav_item" href="upload-prescription">Upload Prescription</a>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                                 <ul class="navbar-nav attr-nav align-items-center">
@@ -281,7 +286,7 @@ class header extends Component {
                                             </ul>
                                             <div class="cart_footer">
                                                 <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span class="price_symbole">$</span></span>159.00</p>
-                                                <p class="cart_buttons"><a href="#" class="btn btn-fill-line view-cart">View Cart</a><a href="#" class="btn btn-fill-out checkout">Checkout</a></p>
+                                                <p class="cart_buttons"><a href="#" class="btn btn-fill-line view-cart">View Cart</a><a href="checkout" class="btn btn-fill-out checkout">Checkout</a></p>
                                             </div>
                                         </div>
                                     </li>
