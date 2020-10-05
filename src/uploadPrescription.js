@@ -32,7 +32,7 @@ export default function uploadPrescription() {
                     Please attach a prescription to proceed
             </div>
                 <div>
-                    <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1587633147/marketing/tw0dco5xexdieshf2lxs.svg" alt />
+                    <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1587633147/marketing/tw0dco5xexdieshf2lxs.svg" alt="" />
                     <button><h5>Upload New</h5></button>
                 </div>
                 </center>

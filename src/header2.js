@@ -1,10 +1,10 @@
-import React from 'react';
-import Categories from './categories'
-import Navbar from './navbar'
+import React, { Component } from 'react'
 
-function header2(props) {
-    return (
-        <div>
+export default class header2 extends Component {
+    render() {
+        return (
+            <div>
+                <div>
             <header class="header_wrap">
                 <div class="top-header light_skin bg_dark d-none d-md-block">
                     <div class="custom-container">
@@ -75,22 +75,20 @@ function header2(props) {
                             <ul class="navbar-nav attr-nav align-items-center">
                                 <li><a href="#" class="nav-link"><i class="linearicons-user"></i></a></li>
                                 <li><a href="#" class="nav-link"><i class="linearicons-heart"></i><span class="wishlist_count">0</span></a></li>
-                                <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-toggle="dropdown"><i class="linearicons-bag2"></i><span class="cart_count">2</span><span class="amount"><span class="currency_symbol">$</span>159.00</span></a>
+                                <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-toggle="dropdown"><i class="linearicons-bag2"></i><span class="cart_count">{this.props.total} </span><span class="amount"><span class="currency_symbol">Rs</span>159.00</span></a>
                                     <div class="cart_box cart_right dropdown-menu dropdown-menu-right">
-                                        <ul class="cart_list">
-                                            <li>
-                                                <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                                <a href="#"><img src="assets/images/cart_thamb1.jpg" alt="cart_thumb1" />Variable product 001</a>
-                                                <span class="cart_quantity"> 1 x <span class="cart_amount"> <span class="price_symbole">$</span></span>78.00</span>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                                <a href="#"><img src="assets/images/cart_thamb2.jpg" alt="cart_thumb2" />Ornare sed consequat</a>
-                                                <span class="cart_quantity"> 1 x <span class="cart_amount"> <span class="price_symbole">$</span></span>81.00</span>
-                                            </li>
-                                        </ul>
+                                    <ul class="cart_list">
+                                                {this.props.cart.map((product)=>(
+                                                   <li key={product.id}>
+                                                    <a href="" class="item_remove"><i class="ion-close"></i></a>
+                                                    <a href="#"><img src="assets/images/cart_thamb1.jpg"  alt="cart_thumb1" />{product.name}</a>
+                                                    <span class="cart_quantity"> {product.quantity} x <span class="cart_amount"> <span class="price_symbole">Rs.</span></span>{product.price}</span>
+                                                </li> 
+                                                ))}
+                                                
+                                            </ul>
                                         <div class="cart_footer">
-                                            <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span class="price_symbole">$</span></span>159.00</p>
+                                            <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span class="price_symbole">Rs.</span></span>159.00</p>
                                             <p class="cart_buttons"><a href="#" class="btn btn-fill-line view-cart">View Cart</a><a href="#" class="btn btn-fill-out checkout">Checkout</a></p>
                                         </div>
                                     </div>
@@ -102,7 +100,7 @@ function header2(props) {
             </header>
            
         </div>
-    );
+            </div>
+        )
+    }
 }
-
-export default header2;

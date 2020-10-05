@@ -12,35 +12,40 @@ import Signup from './components/signup'
 import SignupUser from './signupUser'
 import Contact from './components/contact'
 import Error from './components/error'
-import Brand from './components/brand'
+import Brand from './components/handlebrand'
 import data from'./myList.json'
 import Category from './components/subCategory'
 import Prescription from './uploadPrescription'
 
 const customHistory = createBrowserHistory();
 
+
+
 class App extends Component {
-  state = {
-    categoryId: '',
-    classId: ''
-  }
-  detectCategoryId = (categoryId)=>{
-    this.setState(categoryId)
-  }
-  detectProductId = (classId)=>{
-    console.log(classId)
-    this.setState(classId)
-  }
+  // constructor(props) {
+  //   super(props)
+
+  //   this.detectProductId = this.detectProductId.bind(this)
+  // }
+  // state = {
+  //   categoryId: 1,
+  //   classId: 1
+  // }
+  // detectProductId= (classId, categoryId)=>{
+  //   this.setState({classId, categoryId})
+  //   console.log(this.state.classId)
+
+  // }
   render() {
     const loggedIn = data.login.isLoggedIn
-
+    const total =data.cart.length
     return (
       <div>
         {loggedIn === "true" ? 
-        (<Header2 cart={data.cart} />) : 
-        (<Header1 cart={data.cart} />)}
+        (<Header2 cart={data.cart} total={total}/>) : 
+        (<Header1 cart={data.cart} total={total}/>)}
         <BrowserRouter>
-          <Switch>
+          <Switch location={this.props.location}>
             <Redirect exact from="/" to="/login" />
 
             <Route path="/index" >
@@ -49,12 +54,12 @@ class App extends Component {
 
             <Route path="/detail" component={ProductDetail} />
 
-            <Route path="/brand" >
-              <Brand brands={data.trending} categoryId={this.state.categoryId} classId={this.state.classId} />
+            <Route path="/brand:id&:pid" >
+              <Brand brands={data.trending}/>
             </Route>
 
             <Route path="/category" >
-              <Category detectCategoryId={this.detectCategoryId} detectProductId={this.detectProductId} />
+              <Category detectCategoryId={this.detectCategoryId} detectProductId={this.detectProductId} history={customHistory} />
             </Route>
 
             <Route path="/checkout" component={Checkout} />

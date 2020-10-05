@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class header extends Component {
     
-    render(props) {
+    render() {
         return (
             <div>
                 {/* <!-- LOADER --> */}
@@ -263,7 +263,7 @@ class header extends Component {
                                     </ul>
                                 </div>
                                 <ul class="navbar-nav attr-nav align-items-center">
-                                    <li><a href="" class="nav-link search_trigger"><i class="linearicons-magnifier"></i></a>
+                                    <li><a href="javascript:void(0);" class="nav-link search_trigger"><i class="linearicons-magnifier"></i></a>
                                         <div class="search_wrap">
                                             <span class="close-search"><i class="ion-ios-close-empty"></i></span>
                                             <form>
@@ -272,12 +272,12 @@ class header extends Component {
                                             </form>
                                         </div><div class="search_overlay"></div>
                                     </li>
-                                    <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-toggle="dropdown"><i class="linearicons-cart"></i><span class="cart_count">2</span></a>
+                                    <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-toggle="dropdown"><i class="linearicons-cart"></i><span class="cart_count">{this.props.total} </span></a>
                                         <div class="cart_box dropdown-menu dropdown-menu-right">
                                             <ul class="cart_list">
                                                 {this.props.cart.map((product)=>(
                                                    <li key={product.id}>
-                                                    <a href="#" class="item_remove"><i class="ion-close"></i></a>
+                                                    <a href="" class="item_remove"><i class="ion-close"></i></a>
                                                     <a href="#"><img src="assets/images/cart_thamb1.jpg"  alt="cart_thumb1" />{product.name}</a>
                                                     <span class="cart_quantity"> {product.quantity} x <span class="cart_amount"> <span class="price_symbole">Rs.</span></span>{product.price}</span>
                                                 </li> 
@@ -285,7 +285,7 @@ class header extends Component {
                                                 
                                             </ul>
                                             <div class="cart_footer">
-                                                <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span class="price_symbole">$</span></span>159.00</p>
+                                                <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span class="price_symbole">Rs.</span></span>159.00</p>
                                                 <p class="cart_buttons"><a href="#" class="btn btn-fill-line view-cart">View Cart</a><a href="checkout" class="btn btn-fill-out checkout">Checkout</a></p>
                                             </div>
                                         </div>

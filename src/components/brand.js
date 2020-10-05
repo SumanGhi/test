@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
-import Categories from '../categories'
 import yes from '../myList.json'
 
-
-
 export default class brand extends Component {
+    
     state = {
-        selectedTabId: this.props.productId,
-        selectedCategoryId: this.props.categoryId
+        selectedTabId: parseInt(this.props.id),
+        selectedCategoryId: parseInt(this.props.pid)
     }
     
     isActive = (id) => {

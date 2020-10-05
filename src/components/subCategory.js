@@ -3,28 +3,26 @@ import yes from '../myList.json'
 
 export default class subCategory2 extends Component {
 
+    
     state = {
         selectedTabId: 1,
-        selectedCategoryId: ''
+        selectedCategoryId: 0
     }
 
     isActive = (id) => {
-        console.log(id)
         return (this.state.selectedTabId === id)
 
     }
 
     setActiveTab = (selectedTabId) => {
-        this.setState({ selectedTabId });
+        this.setState({ selectedTabId });        
+        
+
     }
     setCategoryTab = (selectedCategoryId) => {
-        this.setState({ selectedCategoryId });
-        prompt(this.state.selectedTabId)
-        prompt(this.state.selectedCategoryId)
-        this.props.detectProductId(this.state.selectedTabId)
-        this.props.detectCategoryId(this.state.selectedCategoryId)
-        
+        this.setState({ selectedCategoryId })    
     }
+    
     render() {
         return (
             <div>
@@ -72,7 +70,7 @@ export default class subCategory2 extends Component {
                         <div class={this.isActive(yes.id) ? "genric_active" : 'generic'}>
                         {yes["sub-category"].map((sub)=>
                         <div key={sub.id} style={{marginTop:'12px'}}>
-                        <a href="brand"><h4 onClick={this.setCategoryTab.bind(this,sub.id)}>- {sub.name}</h4></a>
+                        <a href={"brand"+this.state.selectedTabId+"&"+this.state.selectedCategoryId}><h4 onClick={this.setCategoryTab.bind(this,sub.id)}>- {sub.name}</h4></a>
                         </div>)}
                         </div>
                         )}
