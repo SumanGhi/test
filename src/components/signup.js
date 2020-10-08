@@ -96,7 +96,6 @@ class signup extends Component {
             console.log(this.state)
             axios
                 .post(
-                    {'Content-Type': 'application/json'},
                     "http://127.0.0.1:5000/user/save",
                     {
                         user: {
@@ -111,11 +110,14 @@ class signup extends Component {
                         }
                     }
                 )
+                .then(submit=>{
+                    this.setState(initialState)
+                    this.props.history.push('/login') 
+                })
                 .catch(error => {
                     console.log("registration error")
                 })
-            this.setState(initialState)
-            this.props.history.push('/login')
+            
 
         }
     }

@@ -52,22 +52,24 @@ class login extends Component {
 
             axios
                 .post(
-                    {'Content-Type': 'application/json'},
                     "http://127.0.0.1:5000/user/login",
                     {
                         user: {
-                            email: this.state.email,
+                            username: this.state.email,
                             password: this.state.password,
-                            rememberMe: this.state.rememberMe
+                            remember_me: this.state.rememberMe
                         }
                     }
                 )
+                .then(submit=>{
+                    this.setState(initialState)
+            this.props.history.push('/index')
+            this.props.history.go('/index')
+                })
                 .catch(error => {
                     console.log("registration error")
                 })
-            this.setState(initialState)
-            this.props.history.push('/index')
-            this.props.history.go('/index')
+            
         }
     }
 
