@@ -16,34 +16,46 @@ import Brand from './components/handlebrand'
 import data from'./myList.json'
 import Category from './components/subCategory'
 import Prescription from './uploadPrescription'
+import axios from 'axios';
 
 const customHistory = createBrowserHistory();
 
 
 
 class App extends Component {
-  // constructor(props) {
-  //   super(props)
 
-  //   this.detectProductId = this.detectProductId.bind(this)
-  // }
-  // state = {
-  //   categoryId: 1,
-  //   classId: 1
-  // }
-  // detectProductId= (classId, categoryId)=>{
-  //   this.setState({classId, categoryId})
-  //   console.log(this.state.classId)
+  constructor(props) {
+        super(props);
+        this.state = {
+            Users: []
+        };
+    }
+  getUsersData() {
+    axios
+      .get(
+        "http://127.0.0.1:5000/user/login",
+        {}
+      )
+      .then(res => {
+        const data = res.data
+        console.log(data)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }
+  componentDidMount() {
+    this.getUsersData()
+  }
 
-  // }
   render() {
     const loggedIn = data.login.isLoggedIn
-    const total =data.cart.length
+    const total = data.cart.length
     return (
       <div>
-        {loggedIn === "true" ? 
-        (<Header2 cart={data.cart} total={total}/>) : 
-        (<Header1 cart={data.cart} total={total}/>)}
+        {loggedIn === "true" ?
+          (<Header2 cart={data.cart} total={total} />) :
+          (<Header1 cart={data.cart} total={total} />)}
         <BrowserRouter>
           <Switch location={this.props.location}>
             <Redirect exact from="/" to="/login" />
@@ -55,7 +67,7 @@ class App extends Component {
             <Route path="/detail" component={ProductDetail} />
 
             <Route path="/brand:id&:pid" >
-              <Brand brands={data.trending}/>
+              <Brand brands={data.trending} />
             </Route>
 
             <Route path="/category" >
@@ -73,9 +85,9 @@ class App extends Component {
             <Route path="/upload-prescription" component={Prescription} />
 
             <Route path="/login" component={() =>
-              <Login login={data.login} history={customHistory} />} 
-              />
-            
+              <Login login={data.login} history={customHistory} />}
+            />
+
             <Route component={Error} />
           </Switch>
         </BrowserRouter>

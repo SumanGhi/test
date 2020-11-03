@@ -97,7 +97,7 @@ class signup extends Component {
             console.log(this.state)
             axios
                 .post(
-                    "http://localhost:3000/signup",
+                    "http://127.0.0.1:5000/user/save",
                     {
                         user: {
                             FirstName: this.state.FirstName,
@@ -110,13 +110,18 @@ class signup extends Component {
                         }
                     }
                 )
+                .then(submit=>{
+                    this.setState(initialState)
+                    this.props.history.push('/login') 
+                })
                 .catch(error => {
                     console.log("registration error")
                 })
-            this.setState(initialState)
-            this.props.history.push('/login')
 
         }
+    }
+    handleUser=()=>{
+        this.props.history.push('/signup')
     }
 
     render() {
@@ -156,6 +161,10 @@ class signup extends Component {
                                 <div class="col-xl-6 col-md-10">
                                     <div class="login_wrap">
                                         <div class="padding_eight_all bg-white">
+                                            <div style={{float:'right'}}>
+                                                <button style={{margin:'5px',color:'red'}} >User</button>
+                                                <button style={{margin:'5px',color:'red'}} onClick={this.handleUser}>Customer</button>
+                                            </div>
                                             <div class="heading_s1">
                                                 <h3>Create an Account</h3>
                                             </div>

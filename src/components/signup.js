@@ -11,7 +11,8 @@ const initialState = {
     gender: "",
     contactNo: "",
     password: "",
-    rePassword: ""
+    rePassword: "",
+    userName: "suman"
 }
 class signup extends Component {
     state = initialState
@@ -93,33 +94,42 @@ class signup extends Component {
         event.preventDefault()
         const isValid = this.validate()
         if (isValid) {
-            console.log(this.state)
+            // console.log(this.state)
             axios
                 .post(
                     "http://127.0.0.1:5000/user/save",
                     {
                         user: {
-                            FirstName: this.state.FirstName,
-                            LastName: this.state.LastName,
+                            firstName: this.state.FirstName,
+                            userName: this.state.userName,
+                            lastName: this.state.LastName,
                             userEmail: this.state.email,
                             password: this.state.password,
-                            address: this.state.address,
-                            contactNo: this.state.contactNo,
+                            address: {
+                                address_1: this.state.address
+                            },
+                            contactNo: {
+                                contact_1: this.state.contactNo
+                            }, 
                             userGender: this.state.gender,
                             userDoB: this.state.DoB
                         }
                     }
                 )
                 .then(submit=>{
-                    this.setState(initialState)
+                    // this.setState(initialState)
+                    console.log(submit)
                     this.props.history.push('/login') 
                 })
                 .catch(error => {
-                    console.log("registration error")
+                    console.log(error)
                 })
             
 
         }
+    }
+    handleUser=()=>{
+        this.props.history.push('/admin')
     }
 
     render() {
@@ -159,6 +169,10 @@ class signup extends Component {
                                 <div class="col-xl-6 col-md-10">
                                     <div class="login_wrap">
                                         <div class="padding_eight_all bg-white">
+                                        <div style={{float:'right'}}>
+                                                <button style={{margin:'5px',color:'red'}} onClick={this.handleUser}>User</button>
+                                                <button style={{margin:'5px',color:'red'}} >Customer</button>
+                                            </div>
                                             <div class="heading_s1">
                                                 <h3>Create an Account</h3>
                                             </div>

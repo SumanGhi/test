@@ -62,14 +62,14 @@ class login extends Component {
                     }
                 )
                 .then(submit=>{
-                    this.setState(initialState)
-            this.props.history.push('/index')
-            this.props.history.go('/index')
+                    
                 })
                 .catch(error => {
                     console.log("registration error")
                 })
-            
+            this.setState(initialState)
+                    this.props.history.push('/index')
+                    this.props.history.go('/index')
         }
     }
 

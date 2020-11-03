@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 
 
 class trendingProduct extends Component {
-    render(props) {
+    handleCart= (id)=>{
+        
+    }
+    render() {
         return (
             <div>
                 {/* <!-- END SECTION SHOP --> */}
@@ -51,7 +54,7 @@ class trendingProduct extends Component {
                                                     </a>
                                                     <div class="product_action_box">
                                                         <ul class="list_none pr_action_btn">
-                                                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> </a></li>
+                                                            <li class="add-to-cart" onClick={this.handleCart(products.id)}><a href="#"><i class="icon-basket-loaded"></i> </a></li>
                                                             <li><a href="//bestwebcreator.com/shopwise/demo/shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
                                                             <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
                                                             <li><a href="#"><i class="icon-heart"></i></a></li>
