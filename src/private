@@ -1,0 +1,14 @@
+step1: create a virutal environment to run the project
+	a. pip install virtualenv
+	b. pip install flask
+	c. pip install python-dotenv
+	d. python -m venv {/path/to/your/custom/folder/that/will/become/environment/folder}
+step2: Activate the Environment 
+	a. {/path/to/your/custom/folder/that/will/become/environment/folder}/Scripts/activate (in window)
+Note: path to activate file may vary in linux OS
+step3: install all the dependencies in requirements.txt file "pip install -r requirements.txt"
+setp4: run with "flask run" command inside virtual environment
+#prerequisites:
+1. Postgres must be installed
+2. database name as 'metamanager' must be created
+3. schema name 'meta_config' under 'metamanager' must be created
