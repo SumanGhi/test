@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import AddToCart from './components/addToCart'
 class header extends Component {
     
     render() {
@@ -272,24 +272,7 @@ class header extends Component {
                                             </form>
                                         </div><div class="search_overlay"></div>
                                     </li>
-                                    <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-toggle="dropdown"><i class="linearicons-cart"></i><span class="cart_count">{this.props.total} </span></a>
-                                        <div class="cart_box dropdown-menu dropdown-menu-right">
-                                            <ul class="cart_list">
-                                                {this.props.cart.map((product)=>(
-                                                   <li key={product.id}>
-                                                    <a href="" class="item_remove"><i class="ion-close"></i></a>
-                                                    <a href="#"><img src="assets/images/cart_thamb1.jpg"  alt="cart_thumb1" />{product.name}</a>
-                                                    <span class="cart_quantity"> {product.quantity} x <span class="cart_amount"> <span class="price_symbole">Rs.</span></span>{product.price}</span>
-                                                </li> 
-                                                ))}
-                                                
-                                            </ul>
-                                            <div class="cart_footer">
-                                                <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span class="price_symbole">Rs.</span></span>159.00</p>
-                                                <p class="cart_buttons"><a href="viewCart" class="btn btn-fill-line view-cart">View Cart</a><a href="checkout" class="btn btn-fill-out checkout">Checkout</a></p>
-                                            </div>
-                                        </div>
-                                    </li>
+                                    <AddToCart cart={this.props.cart} />
                                 </ul>
                             </nav>
                         </div>

@@ -1595,6 +1595,7 @@ button:focus {
 	float: right;
 	margin-left: 5px;
 	color: #333 !important;
+	cursor: pointer;
 }
 .cart_list img {
 	border: 1px solid #ddd;

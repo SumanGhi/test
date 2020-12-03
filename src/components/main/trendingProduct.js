@@ -1,27 +1,31 @@
 import React, { Component } from 'react';
+import { addToCart } from "../../actions/cartActions";
+import { connect } from "react-redux";
+
+
 
 class trendingProduct extends Component {
     
-    state = {
-        cartItems: this.props.cartItems
-    }
-    handleClick= (product)=>{
-        const cartItems = this.state.cartItems.slice()
-        let alreadyInCart = false
-        cartItems.forEach((item)=>{
+    // state = {
+    //     cartItems: this.props.cartItems
+    // }
+    // handleClick= (product)=>{
+    //     const cartItems = this.state.cartItems.slice()
+    //     let alreadyInCart = false
+    //     cartItems.forEach((item)=>{
             
-            if(item.product.id == product.id){
-                item.count++
-                alreadyInCart = true
-            }
-        })
-            if(!alreadyInCart){
-                console.log('new item')
-                cartItems.push({product, count: 1})
-            }
-            this.setState({cartItems})
-        console.log(this.state.cartItems)
-    }
+    //         if(item.product.id == product.id){
+    //             item.count++
+    //             alreadyInCart = true
+    //         }
+    //     })
+    //         if(!alreadyInCart){
+    //             console.log('new item')
+    //             cartItems.push({product, count: 1})
+    //         }
+    //         this.setState({cartItems})
+    //     console.log(this.state.cartItems)
+    // }
     render() {
         return (
             <div>
@@ -71,7 +75,7 @@ class trendingProduct extends Component {
                                                     </a>
                                                     <div class="product_action_box">
                                                         <ul class="list_none pr_action_btn">
-                                                            <li class="add-to-cart" onClick={()=>{this.handleClick(products)}}><a ><i class="icon-basket-loaded"></i></a></li>
+                                                            <li class="add-to-cart" onClick={() => this.props.addToCart(products)}><a ><i class="icon-basket-loaded"></i></a></li>
                                                             <li><a href="//bestwebcreator.com/shopwise/demo/shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
                                                             <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
                                                             <li><a href="#"><i class="icon-heart"></i></a></li>
@@ -102,4 +106,10 @@ class trendingProduct extends Component {
     }
 }
 
-export default (trendingProduct)
+export default connect(
+    (state) => ({ products: state.products.filteredItems }),
+    {
+      
+      addToCart,
+    }
+  )(trendingProduct)

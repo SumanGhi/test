@@ -9,8 +9,6 @@ import Main from './components/main/main'
 import ProductDetail from './components/productDetail'
 import Checkout from './components/checkout'
 import ViewCart from './components/viewCart'
-import Cart from './components/cart/Cart'
-import Home from './components/cart/Home'
 import Signup from './components/signup'
 import SignupUser from './signupUser'
 import Contact from './components/contact'
@@ -21,6 +19,7 @@ import Category from './components/subCategory'
 import Prescription from './uploadPrescription'
 import axios from 'axios';
 // import AddCart from './components/Cart'
+import Cart from './components/Cart'
 
 const customHistory = createBrowserHistory();
 
@@ -31,7 +30,6 @@ class App extends Component {
         this.state = {
           data: [],
           Users: [],
-          cartItems: []
         };
     }
   getUsersData() {
@@ -55,12 +53,12 @@ class App extends Component {
 
   render() {
     const loggedIn = data.login.isLoggedIn
-    const total = this.state.cartItems.length
+    
     return (
       <div>
         {loggedIn === "true" ?
-          (<Header2 cart={data.cart} total={total} />) :
-          (<Header1 cart={data.cart} total={total} />)}
+          (<Header2 cart={data.cart}/>) :
+          (<Header1 cart={data.cart}/>)}
         <BrowserRouter>
           <Switch location={this.props.location}>
             <Redirect exact from="/" to="/login" />
@@ -84,8 +82,6 @@ class App extends Component {
             <Route path="/viewCart" component={ViewCart} />
 
             <Route path="/cart" component={Cart} />
-
-            <Route path="/home" component={Home} />
 
             <Route path="/signup" component={Signup} />
 
