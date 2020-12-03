@@ -1,39 +1,11 @@
 import React, { Component } from "react";
-import formatCurrency from "../util";
 import { connect } from "react-redux";
-import Modal from "react-modal";
 import { removeFromCart } from "../actions/cartActions";
-import { createOrder, clearOrder } from "../actions/orderActions";
 
 class addToCart extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "",
-      email: "",
-      address: "",
-      showCheckout: false,
-    };
-  }
-  handleInput = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
-  createOrder = (e) => {
-    e.preventDefault();
-    const order = {
-      name: this.state.name,
-      email: this.state.email,
-      address: this.state.address,
-      cartItems: this.props.cartItems,
-      total: this.props.cartItems.reduce((a, c) => a + c.price * c.count, 0),
-    };
-    this.props.createOrder(order);
-  };
-  closeModal = () => {
-    this.props.clearOrder();
-  };
+  
   render() {
-    const { cartItems, order } = this.props;
+    const { cartItems} = this.props;
         return (
             <div>
                 <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-toggle="dropdown"><i class="linearicons-cart"></i><span class="cart_count">{cartItems.length} </span></a>
@@ -61,8 +33,7 @@ class addToCart extends Component {
 
 export default connect(
     (state) => ({
-      order: state.order.order,
       cartItems: state.cart.cartItems,
     }),
-    { removeFromCart, createOrder, clearOrder }
+    { removeFromCart}
   )(addToCart);

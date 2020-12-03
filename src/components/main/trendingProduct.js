@@ -6,26 +6,6 @@ import { connect } from "react-redux";
 
 class trendingProduct extends Component {
     
-    // state = {
-    //     cartItems: this.props.cartItems
-    // }
-    // handleClick= (product)=>{
-    //     const cartItems = this.state.cartItems.slice()
-    //     let alreadyInCart = false
-    //     cartItems.forEach((item)=>{
-            
-    //         if(item.product.id == product.id){
-    //             item.count++
-    //             alreadyInCart = true
-    //         }
-    //     })
-    //         if(!alreadyInCart){
-    //             console.log('new item')
-    //             cartItems.push({product, count: 1})
-    //         }
-    //         this.setState({cartItems})
-    //     console.log(this.state.cartItems)
-    // }
     render() {
         return (
             <div>
